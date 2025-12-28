@@ -25,7 +25,7 @@ const Footer = () => {
               <a 
                 target="_blank" 
                 rel="noopener noreferrer"
-                href="https://wa.me/923001234567"
+                href="https://wa.me/923220986963"
                 className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
               >
                 <Phone size={20} className="text-brand-secondary shrink-0" />
