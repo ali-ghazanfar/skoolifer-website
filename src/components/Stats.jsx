@@ -35,9 +35,9 @@ const Stats = () => {
         {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x-0 md:divide-x divide-white/10">
           {stats.map((stat, index) => (
-            <div key={index} className="flex flex-col items-center p-4 hover:-translate-y-1 transition-transform duration-300 cursor-pointer">
-              <span className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-2 drop-shadow-md">{stat.value}</span>
-              <span className="text-blue-200 text-xs md:text-sm font-normal uppercase tracking-widest">{stat.label}</span>
+            <div key={index} className="flex flex-col items-center justify-center p-4 hover:-translate-y-1 transition-transform duration-300 cursor-pointer">
+              <span className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-2 drop-shadow-md text-center">{stat.value}</span>
+              <span className="text-blue-200 text-xs md:text-sm font-normal uppercase tracking-widest text-center">{stat.label}</span>
             </div>
           ))}
         </div>
