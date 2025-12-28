@@ -7,6 +7,7 @@ import Stats from './components/Stats';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Features from './components/Features';
+import AboutUsPage from './pages/AboutUsPage';
 import FeaturesPage from './pages/FeaturesPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
@@ -41,6 +42,7 @@ const App = () => {
         <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/features" element={<FeaturesPage />} />
+        <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/terms-of-service" element={<TermsOfServicePage />} />
         <Route path="*" element={<Navigate to="/" replace />} />

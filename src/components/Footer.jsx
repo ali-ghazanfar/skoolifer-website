@@ -70,6 +70,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-gray-500 text-sm">©{new Date().getFullYear()} Skoolifer. All rights reserved.</p>
           <div className="flex gap-8 text-sm text-gray-500 font-medium">
+            <Link to="/about-us" className="hover:text-white transition-colors">About Us</Link>
             <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
             <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <a href="/sitemap.xml" className="hover:text-white transition-colors">Sitemap</a>

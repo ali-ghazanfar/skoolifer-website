@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'Features', path: '/features' },
     { name: 'FAQs', path: '/#faqs' },
+    { name: 'About Us', path: '/about-us' },
   ];
 
   const handleLinkClick = () => setIsMobileMenuOpen(false);
