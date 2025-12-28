@@ -15,14 +15,22 @@ const AboutUsPage = () => {
     },
   ];
 
-  const getInitials = (name) => {
-    return name
-      .split(' ')
-      .map(word => word[0])
-      .join('')
-      .toUpperCase()
-      .slice(0, 2);
-  };
+  const PersonIcon = () => (
+    <svg
+      className="w-16 h-16 text-gray-400"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+      />
+    </svg>
+  );
 
   const getGridClasses = (count) => {
     if (count === 1) {
@@ -177,10 +185,10 @@ const AboutUsPage = () => {
                   className="border border-gray-200 bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 p-6 text-center"
                 >
                   {member.image ? (
-                    <img src={member.image} alt={member.name} className="w-32 h-32 mx-auto mb-6 rounded-full" />
+                    <img src={member.image} alt={member.name} className="w-32 h-32 mx-auto mb-6 rounded-full object-cover" />
                   ) : (
-                    <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-brand-primary to-brand-secondary flex items-center justify-center text-white text-4xl font-bold">
-                      <span>{getInitials(member.name)}</span>
+                    <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gray-100 flex items-center justify-center">
+                      <PersonIcon />
                     </div>
                   )}
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
