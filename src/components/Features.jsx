@@ -70,9 +70,9 @@ const Features = () => {
               <div className="w-16 h-16 bg-blue-50 text-brand-primary rounded-xl flex items-center justify-center mb-8 group-hover:bg-brand-primary group-hover:text-white group-hover:scale-110 transition-all duration-300">
                 {feature.icon}
               </div>
-              <h4 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-brand-primary transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-brand-primary transition-colors duration-300">
                 {feature.title}
-              </h4>
+              </h3>
               <p className="text-gray-500 leading-relaxed text-base group-hover:text-gray-600 transition-colors duration-300">
                 {feature.description}
               </p>

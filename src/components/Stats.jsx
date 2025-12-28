@@ -14,6 +14,7 @@ const Stats = () => {
           src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
           alt="School Statistics" 
           className="w-full h-full object-cover opacity-20"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/95 to-brand-primary/40 mix-blend-multiply"></div>
         {/* Animated Gradient Orb */}
@@ -21,6 +22,17 @@ const Stats = () => {
       </div>
       
       <div className="relative z-10 w-full px-6 md:px-12 lg:px-24">
+        {/* Who Can Use Section */}
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6 drop-shadow-lg">
+            Who Can Use Skoolifer?
+          </h2>
+          <p className="text-lg md:text-xl text-blue-100 leading-relaxed drop-shadow-md">
+            Skoolifer is designed for school owners, principals, administrators, teachers, and accounts staff to manage everyday academic and administrative tasks with ease. It brings all essential school operations into one connected system, helping institutions stay organized, efficient, and in control.
+          </p>
+        </div>
+
+        {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x-0 md:divide-x divide-white/10">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col items-center p-4 hover:-translate-y-1 transition-transform duration-300 cursor-pointer">

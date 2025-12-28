@@ -31,11 +31,11 @@ const Faq = () => {
           {/* Left Header */}
           <div className="lg:col-span-5">
             <span className="text-brand-primary font-normal tracking-wider uppercase text-sm mb-3 block">Common Questions</span>
-            <h3 className="text-4xl md:text-5xl font-bold text-brand-dark leading-tight mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-brand-dark leading-tight mb-6">
               Got questions?<br/>We have answers.
-            </h3>
+            </h2>
             <p className="text-gray-500 text-lg mb-8 leading-relaxed">
-              If you can't find the answer you're looking for, chat with our support team directly.
+              If you can't find the answer you're looking for, chat with our support team directly. As the best school ERP in Pakistan, we're here to help you understand how our cloud-based school management software can transform your school operations.
             </p>
             <a 
               href="https://wa.me/923220986963" 

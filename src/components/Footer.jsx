@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Column 1 - Logo, Product Name, and Contact Info */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-10">
             <div className="flex items-center gap-3">
-              <img src="/skoolifer-logo.svg" alt="Skoolifer Logo" className="w-20 h-20 rounded-full" />
+              <img src="/skoolifer-logo.svg" alt="Skoolifer Logo" className="w-20 h-20 rounded-full" loading="lazy" />
               <span className="text-2xl md:text-6xl font-bold tracking-tight text-white">
                 Skoolifer
               </span>
@@ -72,6 +72,7 @@ const Footer = () => {
           <div className="flex gap-8 text-sm text-gray-500 font-medium">
             <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
             <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <a href="/sitemap.xml" className="hover:text-white transition-colors">Sitemap</a>
           </div>
         </div>
       </div>

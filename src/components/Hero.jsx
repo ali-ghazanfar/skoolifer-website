@@ -1,15 +1,50 @@
+import { Helmet } from 'react-helmet-async';
 import { PlayCircle, CheckCircle2 } from 'lucide-react';
 
 const Hero = () => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Skoolifer",
+    "url": "https://skoolifer.com",
+    "operatingSystem": "Web",
+    "applicationCategory": "EducationalApplication",
+    "description": "Skoolifer is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
+    "offers": {
+      "@type": "Offer",
+      "price": "13",
+      "priceCurrency": "PKR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "13",
+        "priceCurrency": "PKR",
+        "billingIncrement": 1,
+        "unitText": "per student per month"
+      }
+    }
+  };
+
   return (
-    <section className="relative w-full min-h-[90vh] flex items-center overflow-hidden bg-brand-dark">
-      {/* Background & Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
-          alt="Modern School Classroom" 
-          className="w-full h-full object-cover opacity-20"
+    <>
+      <Helmet>
+        <title>Skoolifer – School ERP Software in Pakistan</title>
+        <meta
+          name="description"
+          content="Skoolifer is a cloud-based school ERP software in Pakistan that reduces administrative workload by 65% and improves operational efficiency by 50%."
         />
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
+      </Helmet>
+      <section className="relative w-full min-h-[90vh] flex items-center overflow-hidden bg-brand-dark">
+        {/* Background & Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
+            alt="Modern School Classroom" 
+            className="w-full h-full object-cover opacity-20"
+            loading="lazy"
+          />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/95 to-brand-primary/40 mix-blend-multiply"></div>
         {/* Animated Gradient Orb */}
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-[100px] animate-pulse"></div>
@@ -71,6 +106,7 @@ const Hero = () => {
 
       </div>
     </section>
+    </>
   );
 };
 

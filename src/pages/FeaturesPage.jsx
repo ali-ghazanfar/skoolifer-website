@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { 
   Users, BookOpen, DollarSign, Settings, 
   BarChart3, Shield, Smartphone, Globe, Bell, Calendar,
@@ -8,6 +9,28 @@ import {
 } from 'lucide-react';
 
 const FeaturesPage = () => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Skoolifer",
+    "url": "https://skoolifer.com",
+    "operatingSystem": "Web",
+    "applicationCategory": "EducationalApplication",
+    "description": "Skoolifer is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
+    "offers": {
+      "@type": "Offer",
+      "price": "13",
+      "priceCurrency": "PKR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "13",
+        "priceCurrency": "PKR",
+        "billingIncrement": 1,
+        "unitText": "per student per month"
+      }
+    }
+  };
+
   const modules = [
     {
       title: "Authentication & User Management",
@@ -239,16 +262,25 @@ const FeaturesPage = () => {
   ];
 
   return (
-    <div className="bg-white">
-      {/* Hero */}
-      <section className="relative py-20 bg-brand-dark overflow-hidden">
-        {/* Background & Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
-            alt="Features" 
-            className="w-full h-full object-cover opacity-20"
-          />
+    <>
+      <Helmet>
+        <title>Features - Skoolifer School Management Software | 100+ Powerful Features</title>
+        <meta name="description" content="Explore 100+ powerful features of Skoolifer, the best school ERP software in Pakistan. Comprehensive school management system with student management, fee collection, attendance tracking, and more." />
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
+      </Helmet>
+      <div className="bg-white">
+        {/* Hero */}
+        <section className="relative py-20 bg-brand-dark overflow-hidden">
+          {/* Background & Overlay */}
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
+              alt="Features" 
+              className="w-full h-full object-cover opacity-20"
+              loading="lazy"
+            />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/95 to-brand-primary/40 mix-blend-multiply"></div>
           {/* Animated Gradient Orb */}
           <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-[100px] animate-pulse"></div>
@@ -281,7 +313,7 @@ const FeaturesPage = () => {
                     <div className={`w-12 h-12 rounded-lg ${module.color} flex items-center justify-center mb-4 group-hover:bg-brand-primary group-hover:text-white group-hover:scale-110 transition-all duration-300`}>
                       {feature.icon}
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-brand-primary transition-colors duration-300">{feature.name}</h3>
+                    <h4 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-brand-primary transition-colors duration-300">{feature.name}</h4>
                     <p className="text-sm text-gray-500 leading-relaxed group-hover:text-gray-600 transition-colors duration-300">
                       {feature.desc}
                     </p>
@@ -299,7 +331,7 @@ const FeaturesPage = () => {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Missing a feature you need?</h2>
           <p className="text-gray-600 text-lg mb-8">
-            We support custom module development and integrations. Our engineering team can build exactly what your institution requires.
+            We support custom module development and integrations. Our engineering team can build exactly what your institution requires. As the leading online school ERP in Pakistan, we understand that every educational institution has unique needs, and our cloud-based school management software can be customized to meet your specific requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
              <a 
@@ -314,6 +346,7 @@ const FeaturesPage = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 
