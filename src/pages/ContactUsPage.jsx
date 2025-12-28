@@ -1,14 +1,16 @@
 import { useState } from 'react';
-import { Send } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 import { Helmet } from 'react-helmet-async';
+import { Send, Loader2 } from 'lucide-react';
+
+const initialFormData = {
+  name: '',
+  whatsapp: '',
+  message: ''
+};
 
 const ContactUsPage = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
+  const [formData, setFormData] = useState(initialFormData);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -25,15 +27,26 @@ const ContactUsPage = () => {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    // Simulate form submission (you can replace this with actual API call)
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      
-      // Clear success message after 5 seconds
-      setTimeout(() => setSubmitStatus(null), 5000);
-    }, 1000);
+    try {
+        await emailjs.send(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            {
+                from_name: formData.name,
+                message: formData.message,
+                whatsapp: formData.whatsapp,
+            },
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        );
+
+        setIsSubmitting(false);
+        setSubmitStatus('success');
+        setFormData(initialFormData);
+    } catch (error) {
+        console.log(error);
+        setIsSubmitting(false);
+        setSubmitStatus('error');
+    }
   };
 
   const jsonLd = {
@@ -110,35 +123,19 @@ const ContactUsPage = () => {
 
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email *
+                      Whatsapp Number *
                     </label>
                     <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
+                      type="tel"
+                      id="whatsapp"
+                      name="whatsapp"
+                      value={formData.whatsapp}
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-brand-primary outline-none transition-colors"
-                      placeholder="your.email@example.com"
+                      placeholder="+92 322 0986963"
                     />
                   </div>
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                    Subject *
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-brand-primary outline-none transition-colors"
-                    placeholder="What is this regarding?"
-                  />
                 </div>
 
                 <div>
@@ -163,6 +160,12 @@ const ContactUsPage = () => {
                   </div>
                 )}
 
+                {submitStatus === 'error' && (
+                  <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
+                    Sorry, there was an error sending your message. Please try again later or contact us directly.
+                  </div>
+                )}
+
                 <button
                   type="submit"
                   disabled={isSubmitting}
@@ -170,8 +173,10 @@ const ContactUsPage = () => {
                 >
                   {isSubmitting ? (
                     <>
-                      <span className="animate-spin">⏳</span>
-                      Sending...
+                      <span className="animate-spin">
+                        <Loader2 className="w-5 h-5" />
+                      </span>
+                      Sending
                     </>
                   ) : (
                     <>
