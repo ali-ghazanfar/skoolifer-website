@@ -10,8 +10,8 @@ const AboutUsPage = () => {
     },
     {
       name: "Ali Hasnain",
-      role: "Customer Support",
-      description: "Ali is a custom support specialist with a passion for helping schools manage their operations.",
+      role: "Intern Software Engineer",
+      description: "Ali is a intern software engineer with a passion for learning application development.",
     },
   ];
 
@@ -169,7 +169,7 @@ const AboutUsPage = () => {
           </div>
         </section>
 
-        <section className="py-20 bg-gray-50">
+        <section className="pb-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
