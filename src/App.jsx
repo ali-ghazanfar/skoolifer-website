@@ -11,6 +11,7 @@ import AboutUsPage from './pages/AboutUsPage';
 import FeaturesPage from './pages/FeaturesPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
+import ContactUsPage from './pages/ContactUsPage';
 
 const HomePage = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/features" element={<FeaturesPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
+        <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/terms-of-service" element={<TermsOfServicePage />} />
         <Route path="*" element={<Navigate to="/" replace />} />

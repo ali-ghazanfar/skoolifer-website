@@ -8,6 +8,7 @@ const pages = [
   { url: "/", changefreq: "weekly", priority: 1.0 },
   { url: "/features", changefreq: "monthly", priority: 0.9 },
   { url: "/about-us", changefreq: "monthly", priority: 0.8 },
+  { url: "/contact-us", changefreq: "monthly", priority: 0.8 },
   { url: "/privacy-policy", changefreq: "yearly", priority: 0.4 },
   { url: "/terms-of-service", changefreq: "yearly", priority: 0.4 }
 ];
