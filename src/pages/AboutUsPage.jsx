@@ -1,6 +1,41 @@
 import { Helmet } from 'react-helmet-async';
 
 const AboutUsPage = () => {
+  const teamMembers = [
+    {
+      name: "Zain ul Abdeen",
+      role: "Software Engineer",
+      description: "Zain is a software engineer with a passion for building scalable and efficient systems.",
+      image: "/zain-ul-abdeen.jpeg"
+    },
+    {
+      name: "Ali Hasnain",
+      role: "Custom Support",
+      description: "Ali is a custom support specialist with a passion for helping schools manage their operations.",
+    },
+  ];
+
+  const getInitials = (name) => {
+    return name
+      .split(' ')
+      .map(word => word[0])
+      .join('')
+      .toUpperCase()
+      .slice(0, 2);
+  };
+
+  const getGridClasses = (count) => {
+    if (count === 1) {
+      return "grid grid-cols-1 gap-8 max-w-md mx-auto";
+    } else if (count === 2) {
+      return "grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto";
+    } else if (count === 3) {
+      return "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto";
+    } else {
+      return "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8";
+    }
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -126,7 +161,7 @@ const AboutUsPage = () => {
           </div>
         </section>
 
-        {/* <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
@@ -135,42 +170,29 @@ const AboutUsPage = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 p-6 text-center">
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-brand-primary to-brand-secondary flex items-center justify-center text-white text-4xl font-bold">
-                  <span>SM</span>
+            <div className={getGridClasses(teamMembers.length)}>
+              {teamMembers.map((member, index) => (
+                <div 
+                  key={index}
+                  className="border border-gray-200 bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 p-6 text-center"
+                >
+                  {member.image ? (
+                    <img src={member.image} alt={member.name} className="w-32 h-32 mx-auto mb-6 rounded-full" />
+                  ) : (
+                    <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-brand-primary to-brand-secondary flex items-center justify-center text-white text-4xl font-bold">
+                      <span>{getInitials(member.name)}</span>
+                    </div>
+                  )}
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
+                  <p className="text-brand-primary font-medium mb-3">{member.role}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {member.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Team Member Name</h3>
-                <p className="text-brand-primary font-medium mb-3">Role/Position</p>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Brief description of the team member's role and contribution to Skoolifer.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 p-6 text-center">
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-brand-primary to-brand-secondary flex items-center justify-center text-white text-4xl font-bold">
-                  <span>TM</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Team Member Name</h3>
-                <p className="text-brand-primary font-medium mb-3">Role/Position</p>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Brief description of the team member's role and contribution to Skoolifer.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 p-6 text-center">
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-brand-primary to-brand-secondary flex items-center justify-center text-white text-4xl font-bold">
-                  <span>TM</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Team Member Name</h3>
-                <p className="text-brand-primary font-medium mb-3">Role/Position</p>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Brief description of the team member's role and contribution to Skoolifer.
-                </p>
-              </div>
+              ))}
             </div>
           </div>
-        </section> */}
+        </section>
 
         <div className="max-w-4xl mx-auto p-8 md:p-12 lg:p-16">
           <div className="prose prose-lg max-w-none text-gray-700">
