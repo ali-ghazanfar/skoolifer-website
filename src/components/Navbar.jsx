@@ -43,7 +43,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" onClick={handleLinkClick} className="flex items-center gap-2">
           <span className="flex items-center gap-2 text-2xl md:text-4xl font-bold text-brand-primary tracking-tight">
-            <img src="public/skoolifer-logo.svg" className="w-12 h-12 rounded-full" alt="Skoolifer Logo" loading="lazy" />
+            <img src="/skoolifer-logo.svg" className="w-12 h-12 rounded-full" alt="Skoolifer Logo" loading="lazy" />
             Skoolifer
           </span>
         </Link>
