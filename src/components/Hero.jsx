@@ -60,7 +60,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl font-light leading-relaxed text-left">
-            Reduce administrative workload by 65%, boost operational efficiency by 50%, and fast your school growth.
+            Reduce administrative workload by 65%, boost operational efficiency by 50%, and fast your school growth by 70%.
           </p>
           
           <div className="flex flex-col items-start gap-4 pt-4">
