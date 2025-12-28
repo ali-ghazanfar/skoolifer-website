@@ -10,7 +10,7 @@ const AboutUsPage = () => {
     },
     {
       name: "Ali Hasnain",
-      role: "Custom Support",
+      role: "Customer Support",
       description: "Ali is a custom support specialist with a passion for helping schools manage their operations.",
     },
   ];
