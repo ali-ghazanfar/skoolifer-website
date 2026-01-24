@@ -1,7 +1,7 @@
 const Stats = () => {
   const stats = [
     { label: 'Uptime Guarantee', value: '99.9%' },
-    { label: 'Premium Features', value: '100+' },
+    { label: 'Premium Features', value: '50+' },
     { label: 'Support Response', value: '<30m' },
     { label: 'Data Security', value: '100%' },
   ];

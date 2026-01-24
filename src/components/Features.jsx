@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { 
   FileText, Users, Database, GraduationCap, Briefcase, 
-  Monitor, DollarSign, MessageCircle, Plus 
+   DollarSign, Plus, ShoppingCart, Award
 } from 'lucide-react';
 
 const Features = () => {
@@ -32,20 +32,20 @@ const Features = () => {
       icon: <Briefcase size={40} strokeWidth={1.5} />,
     },
     {
-      title: 'Academic Resources',
-      description: 'Subject management, grade setup, study materials, diary entries, timetables, and class teacher assignment.',
-      icon: <Monitor size={40} strokeWidth={1.5} />,
-    },
-    {
       title: 'Accounts Management',
       description: 'Income and expense tracking, account heads, financial reports, and complete accounting system.',
       icon: <Database size={40} strokeWidth={1.5} />,
     },
     {
-      title: 'Communication',
-      description: 'WhatsApp integration, SMS, email notifications, bulk messaging, and noticeboard for seamless communication.',
-      icon: <MessageCircle size={40} strokeWidth={1.5} />,
+      title: 'Point of Sale',
+      description: 'Complete POS system for school stores and canteens with product management, sales tracking, and inventory.',
+      icon: <ShoppingCart size={40} strokeWidth={1.5} />,
     },
+    {
+      title: 'Certificate Generation',
+      description: 'Auto-generate ID cards, transfer certificates, character certificates, and enrollment certificates with templates.',
+      icon: <Award size={40} strokeWidth={1.5} />,
+    }
   ];
 
   return (
@@ -56,7 +56,7 @@ const Features = () => {
             Everything You Need
           </h2>
           <p className="text-gray-500 text-lg">
-            Skoodex is providing 100+ features to manage your school operations efficiently.
+            Skoodex is providing powerful features to manage your school operations efficiently.
           </p>
         </div>
 

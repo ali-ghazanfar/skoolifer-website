@@ -1,11 +1,12 @@
 import { Helmet } from 'react-helmet-async';
 import { 
   Users, BookOpen, DollarSign, Settings, 
-  BarChart3, Shield, Smartphone, Globe, Bell, Calendar,
-  FileText, ClipboardList, PenTool, Database, Layers, CheckCircle, Key, UserCircle, Building2, Search, Download, Upload,
+  BarChart3, Shield, Calendar,
+  FileText, ClipboardList, Database, Layers, CheckCircle, UserCircle, Building2, Search, Download, Upload,
   CreditCard, Receipt, TrendingUp, PieChart, Wallet,
-  MessageSquare, Package, QrCode, Gift,  LogIn, LayoutDashboard,
-  School, MapPin, GraduationCap, Award, FileCheck, Printer
+  Package, QrCode, LogIn, LayoutDashboard,
+  MapPin, Award, FileCheck, Printer,
+  ShoppingCart
 } from 'lucide-react';
 
 const FeaturesPage = () => {
@@ -37,7 +38,6 @@ const FeaturesPage = () => {
       color: "bg-blue-50 text-blue-600",
       features: [
         { icon: <LogIn size={20} />, name: "User Login/Logout", desc: "Secure authentication system with login and logout functionality for all user types." },
-        { icon: <Key size={20} />, name: "Password Reset", desc: "Forgot password functionality with secure password reset via email." },
         { icon: <UserCircle size={20} />, name: "User Profile Management", desc: "Comprehensive user profile management with personal information and preferences." },
         { icon: <Shield size={20} />, name: "Role-Based Access Control", desc: "Advanced RBAC system with granular permissions and role assignments." },
         { icon: <Settings size={20} />, name: "Permission Management", desc: "Fine-grained permission system to control access to features and modules." },
@@ -51,19 +51,14 @@ const FeaturesPage = () => {
       color: "bg-blue-50 text-blue-600",
       features: [
         { icon: <LayoutDashboard size={20} />, name: "General Dashboard", desc: "Comprehensive dashboard with key statistics, metrics, and quick access to important features." },
-        { icon: <GraduationCap size={20} />, name: "Student Dashboard", desc: "Personalized student dashboard with academic progress, attendance, and upcoming events." },
-        { icon: <Users size={20} />, name: "Guardian Dashboard", desc: "Dedicated guardian portal with child's academic information, fees, and communication." },
         { icon: <DollarSign size={20} />, name: "Recent Payments Display", desc: "View recent payment transactions and payment history at a glance." },
-        { icon: <Gift size={20} />, name: "Upcoming Birthdays", desc: "Track and display upcoming student and staff birthdays with automated reminders." },
-        { icon: <Calendar size={20} />, name: "Upcoming Events", desc: "Display upcoming academic events, holidays, and important dates on the dashboard." },
-        { icon: <Bell size={20} />, name: "Recent Noticeboards", desc: "Quick access to recent notices, announcements, and circulars." }
+        { icon: <Calendar size={20} />, name: "Upcoming Events", desc: "Display upcoming academic events, holidays, and important dates on the dashboard." }
       ]
     },
     {
       title: "School & Campus Management",
       color: "bg-blue-50 text-blue-600",
       features: [
-        { icon: <School size={20} />, name: "School Profile Management", desc: "Manage complete school profile including contact information, logo, and branding." },
         { icon: <Building2 size={20} />, name: "Campus Profile Management", desc: "Create and manage multiple campus profiles with individual settings and configurations." },
         { icon: <MapPin size={20} />, name: "Multi-Campus Support", desc: "Seamlessly manage operations across multiple campuses from a unified platform." },
         { icon: <Calendar size={20} />, name: "Academic Session Management", desc: "Create and manage academic sessions, set active sessions, and track session-wise data." }
@@ -76,17 +71,15 @@ const FeaturesPage = () => {
         { icon: <Users size={20} />, name: "Student Information System", desc: "Complete 360° student profiles with academic history, health records, family information, and ID card generation." },
         { icon: <Download size={20} />, name: "Student Import/Export", desc: "Bulk import students from Excel files and export student data for reporting and backup." },
         { icon: <FileText size={20} />, name: "Student Number Generation", desc: "Automated student number generation with customizable numbering formats." },
-        { icon: <Key size={20} />, name: "Student Login Credentials", desc: "Generate and manage student login credentials for portal access." },
         { icon: <Search size={20} />, name: "Student Search", desc: "Advanced search functionality to quickly find students by name, ID, class, or other criteria." },
         { icon: <Users size={20} />, name: "Staff Management", desc: "Comprehensive staff profiles with designations, qualifications, and ID card generation." },
-        { icon: <Key size={20} />, name: "Staff Login Credentials", desc: "Manage staff login credentials and access permissions." },
         { icon: <Award size={20} />, name: "Designation Management", desc: "Create and manage staff designations with role-specific permissions and hierarchies." },
         { icon: <TrendingUp size={20} />, name: "Allowance Management", desc: "Configure and manage staff allowances including housing, transport, and other benefits." },
         { icon: <TrendingUp size={20} />, name: "Deduction Management", desc: "Set up and manage staff deductions including taxes, loans, and other deductions." },
         { icon: <Search size={20} />, name: "Staff Search", desc: "Quick search functionality to find staff members by name, designation, or department." },
         { icon: <FileText size={20} />, name: "Guardian Management", desc: "Manage parent/guardian information with login access and family payment options." },
         { icon: <Search size={20} />, name: "Guardian Search", desc: "Search and filter guardians by name, student association, or contact information." },
-        { icon: <Database size={20} />, name: "Certificate Generation", desc: "Auto-generate ID cards, transfer certificates, character certificates, and enrollment certificates." }
+        { icon: <Database size={20} />, name: "Certificate Generation", desc: "Auto-generate ID cards for students and staff, plus leaving certificates, character certificates, and enrollment certificates." }
       ]
     },
     {
@@ -97,8 +90,7 @@ const FeaturesPage = () => {
         { icon: <BookOpen size={20} />, name: "Subject Management", desc: "Create and manage subjects with bulk creation, assign to classes, and track curriculum." },
         { icon: <Calendar size={20} />, name: "Academic Calendar", desc: "Manage academic sessions, holidays, events, and important dates throughout the year." },
         { icon: <Calendar size={20} />, name: "Academic Sessions", desc: "Create and manage academic sessions with start/end dates and session-specific settings." },
-        { icon: <PenTool size={20} />, name: "Diary Management", desc: "Digital diary entries for homework, assignments, and class notes with teacher-student communication." },
-        { icon: <FileText size={20} />, name: "Study Materials", desc: "Upload and share study materials, notes, PDFs, and resources with students and classes." },
+        { icon: <FileText size={20} />, name: "Document Management", desc: "Upload, store, and manage documents with access permissions for students and classes." },
         { icon: <Users size={20} />, name: "Class Teacher Assignment", desc: "Assign class teachers to manage specific classes and students with role-based access." },
         { icon: <Calendar size={20} />, name: "Timetable Management", desc: "Create and manage class timetables with bulk upsert, subject and teacher assignments." }
       ]
@@ -115,13 +107,11 @@ const FeaturesPage = () => {
       ]
     },
     {
-      title: "Attendance & Leave",
+      title: "Attendance Management",
       color: "bg-blue-50 text-blue-600",
       features: [
         { icon: <CheckCircle size={20} />, name: "Student Attendance", desc: "Track daily attendance with bulk entry, barcode scanning, and detailed reports." },
-        { icon: <CheckCircle size={20} />, name: "Staff Attendance", desc: "Monitor staff attendance with bulk entry, barcode scanning, and attendance reports." },
-        { icon: <FileText size={20} />, name: "Student Leave Management", desc: "Manage student leave applications, approvals, and leave history." },
-        { icon: <FileText size={20} />, name: "Staff Leave Management", desc: "Handle staff leave applications, approvals, and leave balance tracking." }
+        { icon: <CheckCircle size={20} />, name: "Staff Attendance", desc: "Monitor staff attendance with bulk entry, barcode scanning, and attendance reports." }
       ]
     },
     {
@@ -180,14 +170,13 @@ const FeaturesPage = () => {
       ]
     },
     {
-      title: "Communication & Notifications",
+      title: "Point of Sale",
       color: "bg-blue-50 text-blue-600",
       features: [
-        { icon: <Smartphone size={20} />, name: "WhatsApp Integration", desc: "Connect WhatsApp for sending messages, notifications, and bulk communications." },
-        { icon: <MessageSquare size={20} />, name: "Individual Messages", desc: "Send personalized WhatsApp messages to individual guardians and staff members." },
-        { icon: <Bell size={20} />, name: "Bulk Messaging", desc: "Send SMS, email, and app notifications to students, parents, and staff in bulk." },
-        { icon: <Settings size={20} />, name: "WhatsApp Connection Management", desc: "Manage WhatsApp connections, API settings, and message templates." },
-        { icon: <Globe size={20} />, name: "Noticeboard", desc: "Create and manage digital notices, circulars, and announcements for specific groups." }
+        { icon: <ShoppingCart size={20} />, name: "POS Interface", desc: "Complete point of sale system for school stores and canteens with product search and cart management." },
+        { icon: <Package size={20} />, name: "Product Management", desc: "Create and manage products with categories, pricing, stock tracking, and barcode support." },
+        { icon: <Package size={20} />, name: "Product Category Management", desc: "Organize products into categories for better inventory management and reporting." },
+        { icon: <Receipt size={20} />, name: "Sales Management", desc: "Process sales transactions, generate receipts, and track sales history with detailed reports." }
       ]
     },
     {
@@ -204,43 +193,23 @@ const FeaturesPage = () => {
       color: "bg-blue-50 text-blue-600",
       features: [
         { icon: <Users size={20} />, name: "Visitor Registration", desc: "Register visitors with check-in/check-out times, purpose of visit, and host information." },
-        { icon: <FileText size={20} />, name: "Visitor Tracking", desc: "Track visitor history, generate visitor passes, and maintain comprehensive visitor logs." }
+        { icon: <FileText size={20} />, name: "Visitor Tracking", desc: "Track visitor history and maintain comprehensive visitor logs with check-in/check-out records." }
       ]
     },
     {
-      title: "Helpdesk & Tasks",
+      title: "Lost & Found",
       color: "bg-blue-50 text-blue-600",
       features: [
-        { icon: <FileText size={20} />, name: "Helpdesk Ticket Management", desc: "Create, assign, and track support tickets with priority levels and status updates." },
-        { icon: <CheckCircle size={20} />, name: "Ticket Resolution", desc: "Resolve tickets with notes, attachments, and resolution tracking for audit purposes." },
-        { icon: <ClipboardList size={20} />, name: "Task Management", desc: "Create and assign tasks, track progress, set deadlines, and manage school operations." }
+        { icon: <Search size={20} />, name: "Lost Item Management", desc: "Register and track lost items with detailed descriptions, location, and status." },
+        { icon: <Package size={20} />, name: "Found Item Management", desc: "Record found items, match with lost items, and manage item returns to owners." }
       ]
     },
     {
-      title: "Student Portal",
+      title: "Task Management",
       color: "bg-blue-50 text-blue-600",
       features: [
-        { icon: <PenTool size={20} />, name: "View Diaries", desc: "Students can view homework, assignments, and diary entries from their teachers." },
-        { icon: <CheckCircle size={20} />, name: "View Attendance", desc: "Access personal attendance records with monthly and yearly summaries." },
-        { icon: <Calendar size={20} />, name: "View Academic Calendar", desc: "Browse academic calendar with events, holidays, and important dates." },
-        { icon: <FileText size={20} />, name: "Apply for Leave", desc: "Submit leave applications online with reason, dates, and supporting documents." },
-        { icon: <FileCheck size={20} />, name: "View Leaves", desc: "Track leave history, status of applications, and leave balance." },
-        { icon: <BookOpen size={20} />, name: "View Study Materials", desc: "Access study materials, notes, and resources shared by teachers." },
-        { icon: <DollarSign size={20} />, name: "View Fees", desc: "View fee structure, payment history, outstanding amounts, and fee statements." },
-        { icon: <Receipt size={20} />, name: "View Invoices", desc: "Access and download fee invoices, receipts, and payment confirmations." }
-      ]
-    },
-    {
-      title: "Guardian Portal",
-      color: "bg-blue-50 text-blue-600",
-      features: [
-        { icon: <PenTool size={20} />, name: "View Diaries", desc: "Guardians can view homework and assignments for their children." },
-        { icon: <CheckCircle size={20} />, name: "View Attendance", desc: "Monitor children's attendance records with detailed reports and summaries." },
-        { icon: <Calendar size={20} />, name: "View Academic Calendar", desc: "Access school calendar with events, holidays, and academic schedules." },
-        { icon: <DollarSign size={20} />, name: "View Fees", desc: "View fee details, payment history, outstanding fees, and fee statements for all children." },
-        { icon: <Receipt size={20} />, name: "View Invoices", desc: "Access and download fee invoices and receipts for all enrolled children." },
-        { icon: <FileCheck size={20} />, name: "View Leaves", desc: "Track leave applications and history for their children." },
-        { icon: <BookOpen size={20} />, name: "View Study Materials", desc: "Access study materials and resources shared by teachers for their children." }
+        { icon: <ClipboardList size={20} />, name: "Task Creation", desc: "Create and assign tasks to staff members with priority levels and deadlines." },
+        { icon: <CheckCircle size={20} />, name: "Task Tracking", desc: "Track task progress, status updates, and completion with detailed task history." }
       ]
     },
     {
@@ -253,7 +222,7 @@ const FeaturesPage = () => {
         { icon: <QrCode size={20} />, name: "Barcode Scanning", desc: "Barcode scanning for quick attendance entry and asset tracking." },
         { icon: <Download size={20} />, name: "Excel Import/Export", desc: "Import and export data in Excel format for bulk operations and reporting." },
         { icon: <Layers size={20} />, name: "Bulk Operations", desc: "Perform bulk operations for attendance, invoices, payroll, marks, and other modules." },
-        { icon: <FileText size={20} />, name: "Document Management", desc: "Upload, store, and manage documents with version control and access permissions." },
+        { icon: <FileText size={20} />, name: "Document Management", desc: "Upload, store, and manage documents with access permissions for students and classes." },
         { icon: <Upload size={20} />, name: "Image & File Upload", desc: "Support for image and file uploads with size limits and format validation." },
         { icon: <Printer size={20} />, name: "Report Generation", desc: "Generate and print comprehensive reports with customizable templates and formats." },
         { icon: <BarChart3 size={20} />, name: "Dashboard Analytics", desc: "Advanced analytics and visualizations on dashboards with interactive charts and graphs." }
@@ -264,8 +233,8 @@ const FeaturesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Features - Skoodex School Management Software | 100+ Powerful Features</title>
-        <meta name="description" content="Explore 100+ powerful features of Skoodex, the best school ERP software in Pakistan. Comprehensive school management system with student management, fee collection, attendance tracking, and more." />
+        <title>Features - Skoodex School Management Software | Powerful Features</title>
+        <meta name="description" content="Explore powerful powerful features of Skoodex, the best school ERP software in Pakistan. Comprehensive school management system with student management, fee collection, attendance tracking, and more." />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
@@ -287,7 +256,7 @@ const FeaturesPage = () => {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            100+ Powerful Features
+            Powerful Features
           </h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto font-light leading-relaxed">
             From student management to fee collection, attendance tracking to payroll processing, Skoodex covers every aspect of your school operations with precision and ease.
