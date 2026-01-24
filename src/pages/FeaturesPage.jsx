@@ -12,11 +12,11 @@ const FeaturesPage = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Skoolifer",
-    "url": "https://skoolifer.com",
+    "name": "Skoodex",
+    "url": "https://Skoodex.com",
     "operatingSystem": "Web",
     "applicationCategory": "EducationalApplication",
-    "description": "Skoolifer is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
+    "description": "Skoodex is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
     "offers": {
       "@type": "Offer",
       "price": "13",
@@ -264,8 +264,8 @@ const FeaturesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Features - Skoolifer School Management Software | 100+ Powerful Features</title>
-        <meta name="description" content="Explore 100+ powerful features of Skoolifer, the best school ERP software in Pakistan. Comprehensive school management system with student management, fee collection, attendance tracking, and more." />
+        <title>Features - Skoodex School Management Software | 100+ Powerful Features</title>
+        <meta name="description" content="Explore 100+ powerful features of Skoodex, the best school ERP software in Pakistan. Comprehensive school management system with student management, fee collection, attendance tracking, and more." />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
@@ -290,7 +290,7 @@ const FeaturesPage = () => {
             100+ Powerful Features
           </h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto font-light leading-relaxed">
-            From student management to fee collection, attendance tracking to payroll processing, Skoolifer covers every aspect of your school operations with precision and ease.
+            From student management to fee collection, attendance tracking to payroll processing, Skoodex covers every aspect of your school operations with precision and ease.
           </p>
         </div>
       </section>

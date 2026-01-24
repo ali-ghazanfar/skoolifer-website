@@ -25,10 +25,10 @@ const Stats = () => {
         {/* Who Can Use Section */}
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6 drop-shadow-lg">
-            Who Can Use Skoolifer?
+            Who Can Use Skoodex?
           </h2>
           <p className="text-lg md:text-xl text-blue-100 leading-relaxed drop-shadow-md">
-            Skoolifer is designed for school owners, principals, administrators, teachers, and accounts staff to manage everyday academic and administrative tasks with ease. It brings all essential school operations into one connected system, helping institutions stay organized, efficient, and in control.
+            Skoodex is designed for school owners, principals, administrators, teachers, and accounts staff to manage everyday academic and administrative tasks with ease. It brings all essential school operations into one connected system, helping institutions stay organized, efficient, and in control.
           </p>
         </div>
 

@@ -56,7 +56,7 @@ const Features = () => {
             Everything You Need
           </h2>
           <p className="text-gray-500 text-lg">
-            Skoolifer is providing 100+ features to manage your school operations efficiently.
+            Skoodex is providing 100+ features to manage your school operations efficiently.
           </p>
         </div>
 

@@ -52,11 +52,11 @@ const ContactUsPage = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Skoolifer",
-    "url": "https://skoolifer.com",
+    "name": "Skoodex",
+    "url": "https://Skoodex.com",
     "operatingSystem": "Web",
     "applicationCategory": "EducationalApplication",
-    "description": "Skoolifer is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
+    "description": "Skoodex is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
     "offers": {
       "@type": "Offer",
       "price": "13",
@@ -74,8 +74,8 @@ const ContactUsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us - Skoolifer School Management Software</title>
-        <meta name="description" content="Contact Skoolifer for inquiries, support, or to request a demo. We're here to help you transform your school management." />
+        <title>Contact Us - Skoodex School Management Software</title>
+        <meta name="description" content="Contact Skoodex for inquiries, support, or to request a demo. We're here to help you transform your school management." />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>

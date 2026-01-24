@@ -5,11 +5,11 @@ const CareerPage = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Skoolifer",
-    "url": "https://skoolifer.com",
+    "name": "Skoodex",
+    "url": "https://Skoodex.com",
     "operatingSystem": "Web",
     "applicationCategory": "EducationalApplication",
-    "description": "Skoolifer is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
+    "description": "Skoodex is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
     "offers": {
       "@type": "Offer",
       "price": "13",
@@ -27,8 +27,8 @@ const CareerPage = () => {
   return (
     <>
       <Helmet>
-        <title>Careers - Skoolifer School Management Software</title>
-        <meta name="description" content="Learn about career opportunities at Skoolifer. We're currently not hiring, but we'd love to hear from passionate individuals who share our vision for transforming education in Pakistan." />
+        <title>Careers - Skoodex School Management Software</title>
+        <meta name="description" content="Learn about career opportunities at Skoodex. We're currently not hiring, but we'd love to hear from passionate individuals who share our vision for transforming education in Pakistan." />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
@@ -62,7 +62,7 @@ const CareerPage = () => {
                 What We're Building
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Skoolifer is Pakistan's leading cloud-based School ERP system, helping educational institutions streamline their operations and focus on what matters most – education.
+                Skoodex is Pakistan's leading cloud-based School ERP system, helping educational institutions streamline their operations and focus on what matters most – education.
               </p>
             </div>
 

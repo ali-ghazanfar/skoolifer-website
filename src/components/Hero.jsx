@@ -5,11 +5,11 @@ const Hero = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Skoolifer",
-    "url": "https://skoolifer.com",
+    "name": "Skoodex",
+    "url": "https://Skoodex.com",
     "operatingSystem": "Web",
     "applicationCategory": "EducationalApplication",
-    "description": "Skoolifer is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
+    "description": "Skoodex is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
     "offers": {
       "@type": "Offer",
       "price": "13",
@@ -27,10 +27,10 @@ const Hero = () => {
   return (
     <>
       <Helmet>
-        <title>Skoolifer – School ERP Software in Pakistan</title>
+        <title>Skoodex – School ERP Software in Pakistan</title>
         <meta
           name="description"
-          content="Skoolifer is a cloud-based school ERP software in Pakistan that reduces administrative workload by 65% and improves operational efficiency by 50%."
+          content="Skoodex is a cloud-based school ERP software in Pakistan that reduces administrative workload by 65% and improves operational efficiency by 50%."
         />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}

@@ -44,8 +44,8 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" onClick={handleLinkClick} className="flex items-center gap-2">
           <span className="flex items-center gap-2 text-2xl md:text-4xl font-bold text-brand-primary tracking-tight">
-            <img src="/skoolifer-logo.svg" className="w-12 h-12 rounded-full" alt="Skoolifer Logo" loading="lazy" />
-            Skoolifer
+            <img src="/skoodex-logo.svg" className="w-12 h-12 rounded-full" alt="Skoodex Logo" loading="lazy" />
+            Skoodex
           </span>
         </Link>
 
@@ -141,7 +141,7 @@ const Navbar = () => {
               {/* <Link 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                to="https://app.skoolifer.com" 
+                to="https://app.Skoodex.com" 
                 className="flex items-center justify-center gap-2 w-full bg-white border border-brand-primary text-brand-primary font-normal py-3 rounded-lg shadow-sm"
               >
                 <Lock size={18} /> Login

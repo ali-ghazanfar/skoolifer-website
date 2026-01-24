@@ -4,11 +4,11 @@ const TermsOfServicePage = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Skoolifer",
-    "url": "https://skoolifer.com",
+    "name": "Skoodex",
+    "url": "https://Skoodex.com",
     "operatingSystem": "Web",
     "applicationCategory": "EducationalApplication",
-    "description": "Skoolifer is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
+    "description": "Skoodex is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
     "offers": {
       "@type": "Offer",
       "price": "13",
@@ -26,8 +26,8 @@ const TermsOfServicePage = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Service - Skoolifer School Management Software</title>
-        <meta name="description" content="Read Skoolifer's terms of service. Understand the rules and regulations for using our school management system." />
+        <title>Terms of Service - Skoodex School Management Software</title>
+        <meta name="description" content="Read Skoodex's terms of service. Understand the rules and regulations for using our school management system." />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
@@ -52,7 +52,7 @@ const TermsOfServicePage = () => {
             Terms of Service
           </h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto font-light leading-relaxed">
-            These terms of service outline the rules and regulations for the use of Skoolifer's services. By accessing this website or using our services, you agree to comply with and be bound by these terms. If you do not agree with any part of these terms, please do not use our services.
+            These terms of service outline the rules and regulations for the use of Skoodex's services. By accessing this website or using our services, you agree to comply with and be bound by these terms. If you do not agree with any part of these terms, please do not use our services.
           </p>
         </div>
       </section>
@@ -61,15 +61,15 @@ const TermsOfServicePage = () => {
 
         <div className="prose prose-lg max-w-none space-y-6 text-gray-700">
           <p className="leading-relaxed text-lg">
-            Skoolifer is a paid, cloud-based School ERP designed to simplify school administration and academic operations. It is intended for use by school owners, administrators, teachers, staff, students, and parents through school-provided access.
+            Skoodex is a paid, cloud-based School ERP designed to simplify school administration and academic operations. It is intended for use by school owners, administrators, teachers, staff, students, and parents through school-provided access.
           </p>
 
           <p className="leading-relaxed text-lg">
-            Skoolifer is offered on a subscription basis, with pricing calculated according to the monthly student count. Fees are billed monthly, for example 13 PKR per student per month. Failure to complete payment may result in temporary suspension or termination of service.
+            Skoodex is offered on a subscription basis, with pricing calculated according to the monthly student count. Fees are billed monthly, for example 13 PKR per student per month. Failure to complete payment may result in temporary suspension or termination of service.
           </p>
 
           <p className="leading-relaxed text-lg">
-            Users are responsible for maintaining the confidentiality of their account credentials and for ensuring that all data entered into the system is accurate and lawful. Skoolifer must not be used for any illegal, abusive, or unauthorized activities.
+            Users are responsible for maintaining the confidentiality of their account credentials and for ensuring that all data entered into the system is accurate and lawful. Skoodex must not be used for any illegal, abusive, or unauthorized activities.
           </p>
 
           <p className="leading-relaxed text-lg">
@@ -77,11 +77,11 @@ const TermsOfServicePage = () => {
           </p>
 
           <p className="leading-relaxed text-lg">
-            Skoolifer may update or modify its services from time to time. Continued use of the service indicates acceptance of any updates to these Terms. These Terms are governed by the laws of Pakistan.
+            Skoodex may update or modify its services from time to time. Continued use of the service indicates acceptance of any updates to these Terms. These Terms are governed by the laws of Pakistan.
           </p>
 
           <p className="leading-relaxed text-lg mt-8">
-            For support or inquiries, contact <a href="mailto:skoolifer@gmail.com" className="text-brand-primary hover:underline">skoolifer@gmail.com</a>.
+            For support or inquiries, contact <a href="mailto:skoodex@gmail.com" className="text-brand-primary hover:underline">skoodex@gmail.com</a>.
           </p>
         </div>
       </div>

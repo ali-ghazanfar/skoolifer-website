@@ -4,11 +4,11 @@ const PrivacyPolicyPage = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Skoolifer",
-    "url": "https://skoolifer.com",
+    "name": "Skoodex",
+    "url": "https://Skoodex.com",
     "operatingSystem": "Web",
     "applicationCategory": "EducationalApplication",
-    "description": "Skoolifer is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
+    "description": "Skoodex is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
     "offers": {
       "@type": "Offer",
       "price": "13",
@@ -26,8 +26,8 @@ const PrivacyPolicyPage = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy - Skoolifer School Management Software</title>
-        <meta name="description" content="Read Skoolifer's privacy policy. Learn how we protect your school data in our cloud-based school management software." />
+        <title>Privacy Policy - Skoodex School Management Software</title>
+        <meta name="description" content="Read Skoodex's privacy policy. Learn how we protect your school data in our cloud-based school management software." />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
@@ -52,7 +52,7 @@ const PrivacyPolicyPage = () => {
             Privacy Policy
           </h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto font-light leading-relaxed">
-            These privacy policies outline the rules and regulations for the use of Skoolifer's services. By accessing this website or using our services, you agree to comply with and be bound by these terms. If you do not agree with any part of these terms, please do not use our services.
+            These privacy policies outline the rules and regulations for the use of Skoodex's services. By accessing this website or using our services, you agree to comply with and be bound by these terms. If you do not agree with any part of these terms, please do not use our services.
           </p>
         </div>
       </section>
@@ -61,15 +61,15 @@ const PrivacyPolicyPage = () => {
 
         <div className="prose prose-lg max-w-none space-y-6 text-gray-700">
           <p className="leading-relaxed text-lg">
-            Skoolifer is an individual-owned, cloud-based School ERP system accessed through a web browser. We value your privacy and are committed to protecting the information shared with us.
+            Skoodex is an individual-owned, cloud-based School ERP system accessed through a web browser. We value your privacy and are committed to protecting the information shared with us.
           </p>
 
           <p className="leading-relaxed text-lg">
-            Skoolifer collects school, student, and staff data only for the purpose of providing school management services such as attendance tracking, academic management, fee records, and communication. All data is entered and controlled by the respective schools, and ownership of this data remains with the school.
+            Skoodex collects school, student, and staff data only for the purpose of providing school management services such as attendance tracking, academic management, fee records, and communication. All data is entered and controlled by the respective schools, and ownership of this data remains with the school.
           </p>
 
           <p className="leading-relaxed text-lg">
-            Skoolifer integrates with WhatsApp to help schools communicate with students, parents, and staff. Message content and recipient management are the responsibility of the school.
+            Skoodex integrates with WhatsApp to help schools communicate with students, parents, and staff. Message content and recipient management are the responsibility of the school.
           </p>
 
           <p className="leading-relaxed text-lg">
@@ -77,11 +77,11 @@ const PrivacyPolicyPage = () => {
           </p>
 
           <p className="leading-relaxed text-lg">
-            By using Skoolifer, you agree to this Privacy Policy.
+            By using Skoodex, you agree to this Privacy Policy.
           </p>
 
           <p className="leading-relaxed text-lg mt-8">
-            For any questions or concerns, contact us at <a href="mailto:skoolifer@gmail.com" className="text-brand-primary hover:underline">skoolifer@gmail.com</a>
+            For any questions or concerns, contact us at <a href="mailto:skoodex@gmail.com" className="text-brand-primary hover:underline">skoodex@gmail.com</a>
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@ import { join } from "path";
 import { writeFileSync } from "fs";
 import { SitemapStream, streamToPromise } from "sitemap";
 
-const BASE_URL = "https://skoolifer.com";
+const BASE_URL = "https://skoodex.com";
 
 const pages = [
   { url: "/", changefreq: "weekly", priority: 1.0 },

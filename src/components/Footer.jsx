@@ -10,9 +10,9 @@ const Footer = () => {
           {/* Column 1 - Logo, Product Name, and Contact Info */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-10">
             <div className="flex items-center gap-3">
-              <img src="/skoolifer-logo.svg" alt="Skoolifer Logo" className="w-20 h-20 rounded-full" loading="lazy" />
+              <img src="/skoodex-logo.svg" alt="Skoodex Logo" className="w-20 h-20 rounded-full" loading="lazy" />
               <span className="text-2xl md:text-6xl font-bold tracking-tight text-white">
-                Skoolifer
+                Skoodex
               </span>
             </div>
             
@@ -32,16 +32,16 @@ const Footer = () => {
                 <span className="text-sm md:text-base">WhatsApp Us</span>
               </a>
               <a 
-                href="mailto:skoolifer@gmail.com"
+                href="mailto:skoodex@gmail.com"
                 className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
               >
                 <Mail size={20} className="text-brand-secondary shrink-0" />
-                <span className="text-sm md:text-base">skoolifer@gmail.com</span>
+                <span className="text-sm md:text-base">skoodex@gmail.com</span>
               </a>
               <a 
                 target="_blank" 
                 rel="noopener noreferrer"
-                href="https://www.facebook.com/skoolifer.erp"
+                href="https://www.facebook.com/skoodex.erp"
                 className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
               >
                 <svg className="w-5 h-5 text-brand-secondary shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -68,7 +68,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-800 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-gray-500 text-sm">©{new Date().getFullYear()} Skoolifer. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">©{new Date().getFullYear()} Skoodex. All rights reserved.</p>
           <div className="flex gap-8 text-sm text-gray-500 font-medium">
             <Link to="/about-us" className="hover:text-white transition-colors">About Us</Link>
             <Link to="/contact-us" className="hover:text-white transition-colors">Contact Us</Link>

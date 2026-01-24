@@ -47,11 +47,11 @@ const AboutUsPage = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Skoolifer",
-    "url": "https://skoolifer.com",
+    "name": "Skoodex",
+    "url": "https://Skoodex.com",
     "operatingSystem": "Web",
     "applicationCategory": "EducationalApplication",
-    "description": "Skoolifer is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
+    "description": "Skoodex is a cloud-based School ERP software that helps schools manage attendance, fees, exams, payroll, and daily academic and administrative operations.",
     "offers": {
       "@type": "Offer",
       "price": "13",
@@ -69,8 +69,8 @@ const AboutUsPage = () => {
   return (
     <>
       <Helmet>
-        <title>About Us - Skoolifer School Management Software</title>
-        <meta name="description" content="Learn about Skoolifer, Pakistan's leading cloud-based school ERP software. Discover our mission to simplify school management and empower educational institutions." />
+        <title>About Us - Skoodex School Management Software</title>
+        <meta name="description" content="Learn about Skoodex, Pakistan's leading cloud-based school ERP software. Discover our mission to simplify school management and empower educational institutions." />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
@@ -101,17 +101,17 @@ const AboutUsPage = () => {
           <div className="prose prose-lg max-w-none space-y-6 text-gray-700">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
             <p className="leading-relaxed text-lg">
-              At Skoolifer, we believe that managing a school should be simple, efficient, and accessible. Our mission is to provide educational institutions across Pakistan with a comprehensive, cloud-based School ERP system that streamlines daily operations, enhances communication, and empowers educators to focus on what matters most – nurturing students.
+              At Skoodex, we believe that managing a school should be simple, efficient, and accessible. Our mission is to provide educational institutions across Pakistan with a comprehensive, cloud-based School ERP system that streamlines daily operations, enhances communication, and empowers educators to focus on what matters most – nurturing students.
             </p>
 
             <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-12">Who We Are</h2>
             <p className="leading-relaxed text-lg">
-              Skoolifer is an individual-owned, cloud-based School ERP system designed specifically for the Pakistani educational landscape. We understand the unique challenges faced by schools in our region and have built a solution that addresses these needs with precision and care.
+              Skoodex is an individual-owned, cloud-based School ERP system designed specifically for the Pakistani educational landscape. We understand the unique challenges faced by schools in our region and have built a solution that addresses these needs with precision and care.
             </p>
 
             <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-12">What We Offer</h2>
             <p className="leading-relaxed text-lg">
-              Our platform provides over 100 powerful features covering every aspect of school management – from student information systems and attendance tracking to fee collection, payroll processing, examination management, and communication tools. With multi-campus support, role-based access control, and seamless WhatsApp integration, Skoolifer adapts to your school's unique requirements.
+              Our platform provides over 100 powerful features covering every aspect of school management – from student information systems and attendance tracking to fee collection, payroll processing, examination management, and communication tools. With multi-campus support, role-based access control, and seamless WhatsApp integration, Skoodex adapts to your school's unique requirements.
             </p>
 
             <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-12">Our Commitment</h2>
@@ -119,13 +119,13 @@ const AboutUsPage = () => {
               We are committed to providing reliable, secure, and user-friendly software solutions, ensuring data privacy and security for all our users, and offering affordable pricing that makes quality school management accessible. We support schools with responsive customer service, continuously improve our platform based on user feedback, and build custom features and integrations when needed.
             </p>
 
-            <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-12">Why Choose Skoolifer</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-12">Why Choose Skoodex</h2>
             <p className="leading-relaxed text-lg">
               As Pakistan's leading online school ERP, we combine cutting-edge technology with deep understanding of local educational needs. Our cloud-based platform ensures that your school data is accessible anytime, anywhere, while our comprehensive feature set covers everything from academic management to financial operations.
             </p>
 
             <p className="leading-relaxed text-lg mt-8">
-              Whether you're a small private school or a large multi-campus institution, Skoolifer scales with your needs and grows with your school.
+              Whether you're a small private school or a large multi-campus institution, Skoodex scales with your needs and grows with your school.
             </p>
           </div>
         </div>
@@ -148,7 +148,7 @@ const AboutUsPage = () => {
                     Ali Ghazanfar
                   </h2>
                   <p className="text-lg italic text-gray-500">
-                    Founder & CEO of Skoolifer
+                    Founder & CEO of Skoodex
                   </p>
                 </div>
 
@@ -157,10 +157,10 @@ const AboutUsPage = () => {
                     He is dedicated to transforming school management in Pakistan, with a vision to simplify operations and empower schools to operate smarter and more efficiently.
                   </p>
                   <p className="leading-relaxed">
-                    As a full-stack software engineer, he has built large-scale products from the ground up, serving thousands of users. His technical expertise ensures that Skoolifer remains innovative, reliable, and aligned with the latest technologies.
+                    As a full-stack software engineer, he has built large-scale products from the ground up, serving thousands of users. His technical expertise ensures that Skoodex remains innovative, reliable, and aligned with the latest technologies.
                   </p>
                   <p className="leading-relaxed">
-                    Driven by a focus on innovation and operational excellence, he leads Skoolifer to streamline administrative processes while enhancing the learning experience for both students and teachers.
+                    Driven by a focus on innovation and operational excellence, he leads Skoodex to streamline administrative processes while enhancing the learning experience for both students and teachers.
                   </p>
 
                 </div>
@@ -174,7 +174,7 @@ const AboutUsPage = () => {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Meet the dedicated professionals behind Skoolifer, working tirelessly to revolutionize school management in Pakistan.
+                Meet the dedicated professionals behind Skoodex, working tirelessly to revolutionize school management in Pakistan.
               </p>
             </div>
 
@@ -205,7 +205,7 @@ const AboutUsPage = () => {
         <div className="max-w-4xl mx-auto p-8 md:p-12 lg:p-16">
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="leading-relaxed text-lg text-center">
-              For more information or to request a demo, contact us at <a href="mailto:skoolifer@gmail.com" className="text-brand-primary hover:underline">skoolifer@gmail.com</a> or reach out via <a href="https://wa.me/923220986963" target="_blank" rel="noopener noreferrer" className="text-brand-primary hover:underline">WhatsApp</a>.
+              For more information or to request a demo, contact us at <a href="mailto:Skoodex@gmail.com" className="text-brand-primary hover:underline">Skoodex@gmail.com</a> or reach out via <a href="https://wa.me/923220986963" target="_blank" rel="noopener noreferrer" className="text-brand-primary hover:underline">WhatsApp</a>.
             </p>
           </div>
         </div>

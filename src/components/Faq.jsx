@@ -7,19 +7,19 @@ const Faq = () => {
   const faqs = [
     {
       question: "Can we migrate data from our existing system?",
-      answer: "Yes, Skoolifer supports data migration from your existing school management system. We provide assistance for migrating student data, staff information, and other important data. Our team will help ensure a smooth transition with minimal disruption to your operations."
+      answer: "Yes, Skoodex supports data migration from your existing school management system. We provide assistance for migrating student data, staff information, and other important data. Our team will help ensure a smooth transition with minimal disruption to your operations."
     },
     {
-      question: "Can Skoolifer handle multiple campuses?",
-      answer: "Yes, Skoolifer supports multi-campus management. You can manage multiple campuses from a single platform with campus-specific settings, data isolation, and centralized reporting."
+      question: "Can Skoodex handle multiple campuses?",
+      answer: "Yes, Skoodex supports multi-campus management. You can manage multiple campuses from a single platform with campus-specific settings, data isolation, and centralized reporting."
     },
     {
       question: "Does Staff, Parents & Students have separate portal?",
-      answer: "Yes, Skoolifer have a dedicated Staff, Parents & Students Portal."
+      answer: "Yes, Skoodex have a dedicated Staff, Parents & Students Portal."
     },
     {
       question: "How secure is our school data?",
-      answer: "Skoolifer uses enterprise-grade security with encrypted data storage, secure authentication, role-based access control, and regular backups. Your data is protected with industry-standard security measures."
+      answer: "Skoodex uses enterprise-grade security with encrypted data storage, secure authentication, role-based access control, and regular backups. Your data is protected with industry-standard security measures."
     }
   ];
 
