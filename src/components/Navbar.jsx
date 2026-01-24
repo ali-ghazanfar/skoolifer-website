@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X, ChevronDown, Headset } from 'lucide-react';
+import { Menu, X, ChevronDown, Headset, Lock } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
@@ -80,21 +80,32 @@ const Navbar = () => {
            
            <div className="h-8 w-px bg-gray-200 mx-2"></div>
 
-           <div className="flex items-center gap-4 group cursor-pointer">
+           <div className="flex items-center gap-10">
               <a 
                 target="_blank" 
                 rel="noopener noreferrer"
-                href="https://wa.me/923220986963"
-                className="flex gap-2 bg-white text-brand-primary py-2.5 rounded-md transition-colors cursor-pointer"
+                href="https://app.Skoodex.com"
+                className="bg-brand-primary hover:bg-brand-secondary text-white font-normal py-2 px-8 rounded-lg transition-all flex items-center justify-center gap-2 text-lg"
               >
-                <Headset size={40} className="cursor-pointer" />
-                <div className="flex flex-col cursor-pointer">
-                  <span className="text-xs font-normal text-gray-600 cursor-pointer">Need help?</span>
-                  <span className="font-normal text-brand-primary cursor-pointer">WhatsApp Us</span>
-                </div>
+                <Lock size={20} className="cursor-pointer" />
+                Login
               </a>
+              
+              <div className="group cursor-pointer">
+                <a 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  href="https://wa.me/923220986963"
+                  className="flex gap-2 bg-white text-brand-primary py-2.5 rounded-md transition-colors cursor-pointer"
+                >
+                  <Headset size={40} className="cursor-pointer" />
+                  <div className="flex flex-col cursor-pointer">
+                    <span className="text-xs font-normal text-gray-600 cursor-pointer">Need help?</span>
+                    <span className="font-normal text-brand-primary cursor-pointer">WhatsApp Us</span>
+                  </div>
+                </a>
+              </div>
            </div>
-           
         </div>
 
         {/* Mobile Toggle */}

@@ -55,22 +55,22 @@ const Hero = () => {
         {/* Left Aligned Content */}
         <div className="space-y-8 animate-fade-in-up max-w-4xl">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white tracking-tight text-left">
-            Focus Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">School</span><br />
+            Focus on <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">School</span><br />
             Growth, Not Hassle.
           </h1>
           
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl font-light leading-relaxed text-left">
-            Reduce administrative workload by 65%, boost operational efficiency by 50%, and fast your school growth by 70%.
+            Reduce administrative workload, boost operational efficiency, and fast your school growth.
           </p>
           
           <div className="flex flex-col items-start gap-4 pt-4">
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <button 
                 rel="noopener noreferrer" 
-                onClick={() => window.open('https://wa.me/923220986963', '_blank')}
+                onClick={() => window.location.href = 'https://app.Skoodex.com/register'}
                 className="bg-brand-primary hover:bg-brand-secondary text-white font-normal py-4 px-8 rounded-lg transition-all flex items-center justify-center gap-2 text-lg"
               >
-                Get Demo Account FREE
+                Create Free Account
               </button>
               
               <button className="bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 text-white font-normal py-4 px-8 rounded-lg transition-all flex items-center justify-center gap-3 text-lg group">
@@ -81,7 +81,7 @@ const Hero = () => {
             
             <div className="flex flex-wrap items-center gap-4 text-xs md:text-sm font-medium text-gray-400 mt-2">
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-green-500" /> Refundable within 30 days
+                <CheckCircle2 className="w-4 h-4 text-green-500" /> No Credit Card Required
               </span>
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-green-500" /> 24/7 Premium support
