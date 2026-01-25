@@ -7,6 +7,7 @@ import Stats from './components/Stats';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Features from './components/Features';
+import Pricing from './components/Pricing';
 import AboutUsPage from './pages/AboutUsPage';
 import FeaturesPage from './pages/FeaturesPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
@@ -20,6 +21,7 @@ const HomePage = () => {
       <Hero />
       <Features />
       <Stats />
+      <Pricing />
       <Faq />
     </>
   );

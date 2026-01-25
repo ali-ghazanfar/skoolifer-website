@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { PlayCircle, CheckCircle2 } from 'lucide-react';
+import { PlayCircle, CheckCircle2, Star, Gift } from 'lucide-react';
 
 const Hero = () => {
   const jsonLd = {
@@ -66,11 +66,11 @@ const Hero = () => {
           <div className="flex flex-col items-start gap-4 pt-4">
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <button 
-                rel="noopener noreferrer" 
-                onClick={() => window.location.href = 'https://app.Skoodex.com/register'}
-                className="bg-brand-primary hover:bg-brand-secondary text-white font-normal py-4 px-8 rounded-lg transition-all flex items-center justify-center gap-2 text-lg"
+                onClick={() => window.open('https://app.Skoodex.com/register', '_blank', 'noopener,noreferrer')}
+                className="bg-brand-primary hover:bg-brand-secondary text-white font-normal py-4 px-8 rounded-lg transition-all flex items-center justify-center gap-2 text-lg group"
               >
-                Create Free Account
+                <Gift className="w-6 h-6 text-brand-accent group-hover:scale-110 transition-transform" />
+                Get 14-day FREE trial
               </button>
               
               <button className="bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 text-white font-normal py-4 px-8 rounded-lg transition-all flex items-center justify-center gap-3 text-lg group">

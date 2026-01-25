@@ -11,31 +11,35 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Features', path: '/features' },
+    { name: 'Pricing', path: '/#pricing' },
     { name: 'FAQs', path: '/#faqs' },
     { name: 'About Us', path: '/about-us' },
   ];
 
   const handleLinkClick = () => setIsMobileMenuOpen(false);
 
-  const handleFaqClick = (e) => {
+  const handleAnchorClick = (e, sectionId) => {
     e.preventDefault();
     setIsMobileMenuOpen(false);
     
     if (location.pathname === '/') {
-      const faqSection = document.getElementById('faqs');
-      if (faqSection) {
-        faqSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     } else {
       navigate('/');
       setTimeout(() => {
-        const faqSection = document.getElementById('faqs');
-        if (faqSection) {
-          faqSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }, 100);
     }
   };
+
+  const handleFaqClick = (e) => handleAnchorClick(e, 'faqs');
+  const handlePricingClick = (e) => handleAnchorClick(e, 'pricing');
 
   return (
     <header className="relative w-full z-50 shadow-md">
@@ -60,7 +64,7 @@ const Navbar = () => {
                return isAnchor ? (
                  <button
                    key={link.name}
-                   onClick={handleFaqClick}
+                   onClick={link.path === '/#faqs' ? handleFaqClick : link.path === '/#pricing' ? handlePricingClick : handleFaqClick}
                    className="flex items-center gap-1 text-sm font-normal text-gray-600 hover:text-brand-primary transition-colors uppercase tracking-wide"
                  >
                    {link.name}
@@ -128,7 +132,7 @@ const Navbar = () => {
                return isAnchor ? (
                  <button
                    key={link.name}
-                   onClick={handleFaqClick}
+                   onClick={link.path === '/#faqs' ? handleFaqClick : link.path === '/#pricing' ? handlePricingClick : handleFaqClick}
                    className="text-lg font-normal text-gray-800 py-4 px-4 border-b border-gray-100 hover:bg-gray-50 hover:text-brand-primary transition-colors text-left"
                  >
                    {link.name}
