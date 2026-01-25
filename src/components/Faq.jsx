@@ -14,8 +14,8 @@ const Faq = () => {
       answer: "Yes, Skoodex supports multi-campus management. You can manage multiple campuses from a single platform with campus-specific settings, data isolation, and centralized reporting."
     },
     {
-      question: "Does Staff, Parents & Students have separate portal?",
-      answer: "Yes, Skoodex have a dedicated Staff, Parents & Students Portal."
+      question: "What kind of support and training do you provide?",
+      answer: "Skoodex provides comprehensive onboarding, training sessions for administrators and staff, detailed documentation, and ongoing support. Our team ensures your staff is fully equipped to use all features effectively."
     },
     {
       question: "How secure is our school data?",
